@@ -1,4 +1,5 @@
 var tournamentData;
+
 function getYears(scoresData) {
     let years = new Set();
     for (tournament of scoresData) {
@@ -39,26 +40,41 @@ function getResultbyLeague(data, league) {
     result = data.filter(item => item.leageu == league)
     return result
 }
+
+function createTournamentHeading(element, tournament) {
+    var heading = document.createElement("h2");
+    var text = document.createTextNode(tournament.year + " - " + tournament.league);
+    heading.appendChild(text);
+    element.appendChild(heading);
+    
+    var subHeading = document.createElement("h3");
+    var subText = document.createTextNode((tournament.name ? tournament.name + " :: " : "") + tournament.location);
+    subHeading.appendChild(subText);
+    element.appendChild(subHeading);
+}
+
 function createResultTable(data) {
     document.getElementById("result-container").innerHTML = "";
     for (item of data) {
-        var heading = document.createElement("h3").appendChild(document.createTextNode(item.year + " - " + item.league));
-        document.getElementById("result-container").appendChild(heading);
+        container = document.getElementById("result-container");
+        createTournamentHeading(container, item);
         var table = document.createElement("table");
+        table.setAttribute("class", "pure-table pure-table-horizontal");
         header = table.createTHead();
         let row = header.insertRow(0);
         row.insertCell(0).textContent = "Place";
         row.insertCell(1).textContent = "Team";
         row.insertCell(2).textContent = "Division";
         row.insertCell(3).textContent = "Format";
-        document.getElementById("result-container").appendChild(table);
+        container.appendChild(table);
+        body = table.createTBody();
         for (result of item.results) {
-            let row = table.insertRow();
+            let scoreRow = body.insertRow();
             //let newCell = table.rows[table.rows.length -1].insertCell();
-            row.insertCell(0).textContent = result.place;
-            row.insertCell(1).textContent = result.team;
-            row.insertCell(2).textContent = result.division;
-            row.insertCell(3).textContent = result.format;
+            scoreRow.insertCell(0).textContent = result.place;
+            scoreRow.insertCell(1).textContent = result.team;
+            scoreRow.insertCell(2).textContent = result.division;
+            scoreRow.insertCell(3).textContent = result.format;
         }
     }
 }
@@ -67,6 +83,13 @@ function selectYear(selectObject) {
     let value = selectObject.value;
     result = getResultsByYear(tournamentData, value);
     createResultTable(result);
+}
+
+function createMenu() {
+    years = getYears(tournamentData);
+    createSelector(years, "year");
+    leagues = getLeagues(tournamentData);
+    createSelector(leagues, "league");
 }
 
 fetch("/static/data/tournament_data.json")
@@ -78,11 +101,7 @@ fetch("/static/data/tournament_data.json")
     })
     .then((json) => {
         tournamentData = json;
-        y = getYears(json);
-        createSelector(y, "year");
-        console.log(y);
-        l = getLeagues(json);
-        createSelector(l, "league");
-        console.log(l);
+        createMenu();
     })
     .catch(console.error);
+

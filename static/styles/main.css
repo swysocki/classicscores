@@ -1,0 +1,22 @@
+body *{
+    font-family: 'Roboto';
+}
+
+.header {
+    background: #2d3e50;
+}
+h1.header {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+.menu {
+    background: #8c9aa8;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
