@@ -28,3 +28,11 @@ h1.header {
     margin-left: auto;
     text-align: left;
 }
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #8c9aa8;
+    font-size: .8em;
+    color: #2d3e50;
+}
