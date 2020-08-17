@@ -81,18 +81,22 @@ function groupTournaments(tournResults) {
     return results
 }
 
-function compare(a, b) {
-    let comparison = 0;
-    if (a.place > b.place) {
-        comparison = 1;
-    } else if (a.place < b.place) {
-        comparison = -1;
+function sortByProperty(property) {
+    return function(a, b) {
+        let comparison = 0;
+        if (a[property] > b[property]) {
+            comparison = 1;
+        } else if (a[property] < b[property]) {
+            comparison = -1;
+        }
+        return comparison;
     }
-    return comparison;
 }
+
 
 function createResultTable(data) {
     document.getElementById("result-container").innerHTML = "";
+    data.sort(sortByProperty("year"));
     for (item of data) {
         container = document.getElementById("result-container");
         createTournamentHeading(container, item);
@@ -109,9 +113,8 @@ function createResultTable(data) {
         body = table.createTBody();
 
         groups = groupTournaments(item.results);
-        console.log(groups);
         for (tournament of groups) {
-            tournament.results.sort(compare);
+            tournament.results.sort(sortByProperty("place"));
             for (result of tournament.results) {
                 let scoreRow = body.insertRow();
                 scoreRow.insertCell(0).textContent = result.place;
