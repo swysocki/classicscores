@@ -81,6 +81,16 @@ function groupTournaments(tournResults) {
     return results
 }
 
+function compare(a, b) {
+    let comparison = 0;
+    if (a.place > b.place) {
+        comparison = 1;
+    } else if (a.place < b.place) {
+        comparison = -1;
+    }
+    return comparison;
+}
+
 function createResultTable(data) {
     document.getElementById("result-container").innerHTML = "";
     for (item of data) {
@@ -101,7 +111,7 @@ function createResultTable(data) {
         groups = groupTournaments(item.results);
         console.log(groups);
         for (tournament of groups) {
-
+            tournament.results.sort(compare);
             for (result of tournament.results) {
                 let scoreRow = body.insertRow();
                 scoreRow.insertCell(0).textContent = result.place;
