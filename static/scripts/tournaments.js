@@ -36,6 +36,7 @@ function getResultsByYear(data, year) {
     result = data.filter(item => item.year == year)
     return result
 }
+
 function getResultbyLeague(data, league) {
     result = data.filter(item => item.leageu == league)
     return result
@@ -46,11 +47,38 @@ function createTournamentHeading(element, tournament) {
     var text = document.createTextNode(tournament.year + " - " + tournament.league);
     heading.appendChild(text);
     element.appendChild(heading);
-    
+
     var subHeading = document.createElement("h3");
     var subText = document.createTextNode((tournament.name ? tournament.name + " :: " : "") + tournament.location);
     subHeading.appendChild(subText);
     element.appendChild(subHeading);
+}
+
+function groupTournaments(tournResults) {
+    // Ugly function to group by divsion + format
+    var groupName = {};
+    var results = tournResults.reduce(function(accumulator, item) {
+        var key = item.division + " - " + item.format;
+        if (!groupName[key]) {
+            groupName[key] = Object.assign({}, {
+                format: item.format,
+                division: item.division,
+                results: [{
+                    place: item.place,
+                    team: item.team
+                }]
+            });
+            accumulator.push(groupName[key]);
+        } else {
+            groupName[key].results.push({
+                place: item.place,
+                team: item.team
+            });
+        }
+        return accumulator;
+
+    }, []);
+    return results
 }
 
 function createResultTable(data) {
@@ -68,16 +96,21 @@ function createResultTable(data) {
         row.insertCell(3).textContent = "Format";
         container.appendChild(table);
         body = table.createTBody();
-        for (result of item.results) {
+
+        groups = groupTournaments(item.results);
+        console.log(groups);
+        for (tournament of groups) {
+
             let scoreRow = body.insertRow();
             //let newCell = table.rows[table.rows.length -1].insertCell();
-            scoreRow.insertCell(0).textContent = result.place;
-            scoreRow.insertCell(1).textContent = result.team;
-            scoreRow.insertCell(2).textContent = result.division;
-            scoreRow.insertCell(3).textContent = result.format;
+            scoreRow.insertCell(0).textContent = tournament.place;
+            scoreRow.insertCell(1).textContent = tournament.team;
+            scoreRow.insertCell(2).textContent = tournament.division;
+            scoreRow.insertCell(3).textContent = tournament.format;
         }
     }
 }
+
 function selectYear(selectObject) {
     console.log(selectObject);
     let value = selectObject.value;
@@ -104,4 +137,3 @@ fetch("/static/data/tournament_data.json")
         createMenu();
     })
     .catch(console.error);
-
