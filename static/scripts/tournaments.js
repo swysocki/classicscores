@@ -88,7 +88,7 @@ function createResultTable(data) {
         createTournamentHeading(container, item);
 
         var table = document.createElement("table");
-        table.setAttribute("class", "pure-table pure-table-horizontal");
+        table.setAttribute("class", "pure-table pure-table-horizontal score-table");
         header = table.createTHead();
         let row = header.insertRow(0);
         row.insertCell(0).textContent = "Place";
