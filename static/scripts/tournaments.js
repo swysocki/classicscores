@@ -21,7 +21,7 @@ function getLeagues(scoresData) {
 function createSelector(data, name) {
     var SelectList = document.createElement("select");
     SelectList.id = name + "-selector";
-    SelectList.setAttribute("onchange", "selectYear(this)");
+    SelectList.setAttribute("onchange", "getResultByValue(this)");
     document.getElementById(name + "-container").appendChild(SelectList);
     for (item of data) {
         var option = document.createElement("option");
@@ -31,15 +31,15 @@ function createSelector(data, name) {
     }
 }
 
-// combine these two functions
-function getResultsByYear(data, year) {
-    result = data.filter(item => item.year == year)
-    return result
-}
-
-function getResultbyLeague(data, league) {
-    result = data.filter(item => item.leageu == league)
-    return result
+function getResultByValue(selectObject) {
+    let result = [];
+    if (selectObject.id.includes("year")) {
+        result = tournamentData.filter(item => item.year == selectObject.value);
+    }
+    if (selectObject.id.includes("league")) {
+        result = tournamentData.filter(item => item.league == selectObject.value);
+    }
+    createResultTable(result);
 }
 
 function createTournamentHeading(element, tournament) {
@@ -104,7 +104,6 @@ function createResultTable(data) {
 
             for (result of tournament.results) {
                 let scoreRow = body.insertRow();
-                //let newCell = table.rows[table.rows.length -1].insertCell();
                 scoreRow.insertCell(0).textContent = result.place;
                 scoreRow.insertCell(1).textContent = result.team;
                 scoreRow.insertCell(2).textContent = tournament.division;
@@ -114,13 +113,6 @@ function createResultTable(data) {
             blankRow.insertCell(0).setAttribute("colspan", "4");
         }
     }
-}
-
-function selectYear(selectObject) {
-    console.log(selectObject);
-    let value = selectObject.value;
-    result = getResultsByYear(tournamentData, value);
-    createResultTable(result);
 }
 
 function createMenu() {
