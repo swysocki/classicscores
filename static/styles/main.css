@@ -37,3 +37,9 @@ footer {
     font-size: .8em;
     color: #2d3e50;
 }
+
+h1.content {
+    font-family: 'Russo One', sans-serif;
+    font-size: 4em;
+    padding-bottom: 5px;
+}

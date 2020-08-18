@@ -1,4 +1,18 @@
 var tournamentData;
+var yearCount;
+var leagueCount;
+
+function displayStats() {
+    document.getElementById("tournament-count").textContent = tournamentData.length + " Tournaments";
+
+    let scoresCount = 0;
+    for (score of tournamentData) {
+        scoresCount += score.results.length;
+    }
+    document.getElementById("scores-count").textContent = scoresCount + " Scores";
+    document.getElementById("year-count").textContent = yearCount + " Years"
+    document.getElementById("league-count").textContent = leagueCount + " Leagues";
+}
 
 function getYears(scoresData) {
     let years = new Set();
@@ -7,6 +21,7 @@ function getYears(scoresData) {
     }
     // Sort the values so they display well
     // the spread operator is useful to convert set to an array
+    yearCount = [...years].length;
     return [...years].sort();
 }
 
@@ -15,6 +30,7 @@ function getLeagues(scoresData) {
     for (tournament of scoresData) {
         leagues.add(tournament.league);
     }
+    leagueCount = [...leagues].length;
     return leagues;
 }
 
@@ -145,5 +161,6 @@ fetch("/static/data/tournament_data.json")
     .then((json) => {
         tournamentData = json;
         createMenu();
+        displayStats();
     })
     .catch(console.error);
