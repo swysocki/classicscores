@@ -10,7 +10,9 @@ Competitive paintball has been played since the 80's, but the results were recor
 
 Accessiblity and longevity. Although it would be more convenient and allow me to add more features, ClassicScores' data will be stored in non-binary format.  This means that search engines can copy it directly, it can be directly archived, and anyone can directly download a copy.
 
-Website
+- Why is this a static site/Why not use a dynamic site?
+
+Cost. I use free hosting to minimize cost. Free, quality static hosting is relatively easy to find.  Github is a great static site host but there are many others. That means this website can be mirrored in multiple places.
 
 - How do I contribute?
 
