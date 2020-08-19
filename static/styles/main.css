@@ -38,8 +38,22 @@ footer {
     color: #2d3e50;
 }
 
-h1.content {
-    font-family: 'Russo One', sans-serif;
-    font-size: 4em;
-    padding-bottom: 5px;
+.hero-image {
+    background-image: url("/static/images/lockout_bw.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3.content {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: .2em;
+    font-size: 1.5em;
+    margin: 0px;
+    padding: 10px;
+    color: whitesmoke;
 }
