@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="l-content">
+        <div class="tournament pure-g">
+                <div class="pure-u-1">
+                        {% regroup result by tournament as league_list %}
+                        {% for tournament, t_scores in league_list %}
+                        <h2>{{ tournament.league }}</h2>
+			<h3>{{ tournament.year }} {{ tournament.name }} - {{ tournament.location }}</h3>
+                        {% regroup t_scores by display_format as div_list %}
+                        {% for grouper, places in div_list %}
+                        <table class="pure-table">
+                                <thead>
+                                        <tr>
+                                                <th colspan="2">{{ grouper }}</th>
+                                        </tr>
+                                </thead>
+                                {% for p in places|dictsort:"place" %}
+                                <tr>
+                                        <td>{{ p.place }}</td>
+                                        <td>{{ p.team }}</td>
+                                </tr>
+                                {% endfor %}
+                                {% endfor %}
+                        </table>
+                        {% endfor %}
+                </div>
+        </div>
+</div>
+{% endblock %}
