@@ -1,1 +1,1 @@
-web: gunicorn retropb.wsgi --chdir retropb
+web: gunicorn classicscores.wsgi --chdir classicscores

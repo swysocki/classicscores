@@ -26,7 +26,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['retropb.herokuapp.com', 'www.retropb.com']
+ALLOWED_HOSTS = ['retropb.herokuapp.com', 'www.retropb.com', 'localhost']
 
 
 # Application definition
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
-ROOT_URLCONF = 'retropb.urls'
+ROOT_URLCONF = 'classicscores.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'retropb.wsgi.application'
+WSGI_APPLICATION = 'classicscores.wsgi.application'
 
 
 # Database
