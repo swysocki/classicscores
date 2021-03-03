@@ -2,6 +2,14 @@ var tournamentData;
 var yearCount;
 var leagueCount;
 
+var formats = {
+    "10M": "10 Man",
+    "5M": "5 Man",
+    "7M": "7 Man",
+    "3M": "3 Man",
+    "XB": "Xball",
+}
+
 function displayStats() {
     document.getElementById("tournament-count").textContent = tournamentData.length + " Tournaments";
 
@@ -77,7 +85,7 @@ function groupTournaments(tournResults) {
         var key = item.division + " - " + item.format;
         if (!groupName[key]) {
             groupName[key] = Object.assign({}, {
-                format: item.format,
+                format: formats[item.format],
                 division: item.division,
                 results: [{
                     place: item.place,
