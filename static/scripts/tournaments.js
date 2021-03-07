@@ -2,12 +2,27 @@ var tournamentData;
 var yearCount;
 var leagueCount;
 
-var formats = {
+var formatMap = {
     "10M": "10 Man",
     "5M": "5 Man",
     "7M": "7 Man",
     "3M": "3 Man",
     "XB": "Xball",
+}
+
+var leagueMap = {
+    "NPPL": "National Professional Paintball League",
+    "GWS": "Great Western Series",
+    "MSPA": "MidSouth Paintball Association",
+    "ICPL": "International Classic Paintball League",
+    "UWL": "Ultimate Woodsball League",
+    "IAO": "International Amateur Open",
+    "WTS": "Woodsball Tournament Series",
+    "WCCP": "West Coast Classic Paintball",
+    "WPF": "World Paintball Federation",
+    "PRA": "Professional Referee Association",
+    "CFOA": "Carolina Field Owners Association",
+    "INDY": "Independent Events",
 }
 
 function displayStats() {
@@ -68,7 +83,7 @@ function getResultByValue(selectObject) {
 
 function createTournamentHeading(element, tournament) {
     var heading = document.createElement("h2");
-    var text = document.createTextNode(tournament.year + " - " + tournament.league);
+    var text = document.createTextNode(tournament.year + " - " + leagueMap[tournament.league]);
     heading.appendChild(text);
     element.appendChild(heading);
 
@@ -85,7 +100,7 @@ function groupTournaments(tournResults) {
         var key = item.division + " - " + item.format;
         if (!groupName[key]) {
             groupName[key] = Object.assign({}, {
-                format: formats[item.format],
+                format: formatMap[item.format],
                 division: item.division,
                 results: [{
                     place: item.place,
