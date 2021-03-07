@@ -25,6 +25,29 @@ var leagueMap = {
     "INDY": "Independent Events",
 }
 
+var divisionMap = {
+    "AM": "Amateur",
+    "AMA": "Amateur A",
+    "AMB": "Amateur B",
+    "PRO": "Professional",
+    "NOV": "Novice",
+    "SP": "SemiPro",
+    "OP": "Open",
+    "RK": "Rookie",
+    "D1": "Division 1",
+    "D2": "Division 2",
+    "D3": "Division 3",
+    "D4": "Division 4",
+    "D5": "Division 5",
+    "TCT": "Tactical",
+    "UNK": "Unknown",
+    "COL": "College",
+    "YNG": "Young Guns",
+    "A": "A",
+    "AA": "AA",
+    "AAA": "AAA",
+}
+
 function displayStats() {
     document.getElementById("tournament-count").textContent = tournamentData.length + " Tournaments";
 
@@ -101,7 +124,7 @@ function groupTournaments(tournResults) {
         if (!groupName[key]) {
             groupName[key] = Object.assign({}, {
                 format: formatMap[item.format],
-                division: item.division,
+                division: divisionMap[item.division],
                 results: [{
                     place: item.place,
                     team: item.team
