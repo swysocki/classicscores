@@ -25,8 +25,8 @@
             {
                 "division": "OP",
                 "format": "10M",
-                "team": "4",
-                "place": "Fox 4 Darkside"
+                "team": "Fox 4 Darkside",
+                "place": "4"
             },
             {
                 "division": "OP",
@@ -91,8 +91,8 @@
             {
                 "division": "AM",
                 "format": "10M",
-                "team": "4",
-                "place": "Tampa Bay Pelicans"
+                "team": "Tampa Bay Pelicans",
+                "place": "4"
             }
         ]
     },
