@@ -88,7 +88,11 @@ function createSelector(data, name) {
     for (item of data) {
         var option = document.createElement("option");
         option.value = item;
-        option.text = item;
+        if (name == "league") {
+            option.text = leagueMap[item]
+        } else {
+            option.text = item;
+        }
         SelectList.appendChild(option);
     }
 }
