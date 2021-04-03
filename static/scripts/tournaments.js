@@ -85,6 +85,10 @@ function createSelector(data, name) {
     SelectList.id = name + "-selector";
     SelectList.setAttribute("onchange", "getResultByValue(this)");
     document.getElementById(name + "-container").appendChild(SelectList);
+    var option = document.createElement("option");
+    option.value = "";
+    option.text = "Choose a " + name;
+    SelectList.appendChild(option);
     for (item of data) {
         var option = document.createElement("option");
         option.value = item;
