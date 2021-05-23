@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block head %}
+<script src="https://kit.fontawesome.com/8bda71bcb4.js" crossorigin="anonymous"></script>
+{% endblock %}
+{% block content %}
+<div class="l-content">
+    <div class="pure-g max-width-wrapper">
+        <div>
+            {{ calendar | safe }}
+        </div>
+        <div class="pure-u-md-1-2">
+            <h3>
+                <a href="/calendar/{{ previous.year }}/{{ previous.month }}" class="calendar-nav">
+                    <i class="fas fa-angle-double-left"></i>
+                    previous
+                </a>
+            </h3>
+        </div>
+        <div class="pure-u-md-1-2 calendar-nav-right">
+             <h3>
+                 <a href="/calendar/{{ next.year }}/{{ next.month }}" class="calendar-nav">
+                    next
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </h3>
+        </div>
+    </div>
+</div>
+{% endblock content %}

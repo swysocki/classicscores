@@ -1,21 +1,57 @@
-# ClassicScores.com
+# ClassicScores
+
+>Warning: Untested. This was migrated from the classicscores.com repo without being tested.
+
 
 ## FAQ
 
-- Why does ClassicScores.com exist?
+- Add Bulk Scores
 
-Competitive paintball has been played since the 80's, but the results were recorded in magazines, print distributions and websites that are long gone. ClassicScores attempts to create a consolidated, digital record of paintball's rich, competitive heritage.
+There is a populate script that allows bulk data to be added using the Tournament and Scores models.  The data must be in JSON format with the following schema:
 
-- Why not use a database? 
+```
+{
+        "year": "1992",
+        "location": "Plattekill, NY",
+        "name": "World Cup",
+        "league": "National Professional Paintball League (NPPL)",
+        "results": [
+            {
+                "division": "PRO",
+                "format": "10M",
+                "team": "All Americans",
+                "place": "1"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "team": "Predators UK",
+                "place": "2"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "team": "Aftershock",
+                "place": "3"
+            }
+        ]
+    }
+```
 
-Accessiblity and longevity. Although it would be more convenient and allow me to add more features, ClassicScores' data will be stored in non-binary format.  This means that search engines can copy it directly, it can be directly archived, and anyone can directly download a copy.
+The utility must be run via `manage.py` shell:
 
-- Why is this a static site/Why not use a dynamic site?
+```
+$ python3 ./manage.py shell
+```
 
-Cost. I use free hosting to minimize cost. Free, quality static hosting is relatively easy to find.  Github is a great static site host but there are many others. That means this website can be mirrored in multiple places.
+You can then import the module and use it to upload:
+
+```
+>>> from tournaments import populate
+```
 
 - How do I contribute?
 
-Open a [Github Issue](https://github.com/swysocki/classicscores/issues) in this repo with any corrections or feature request. You can also contact [me](https://github.com/swysocki) to contribute scores directly.
+Contact admin@classicscores.com with any contributions, corrections or suggestions. 
 
 

@@ -1,0 +1,9 @@
+<div class="pure-g">
+    <div class="pure-u-1">
+        <h2 class="">
+            Series
+        </h2>
+        {% for item in league %}
+        <a class="tourny-links" href="/tournaments/league/{{ item.league|urlencode }}">{{ item.get_league_display }}</a><br /> {% endfor %}
+    </div>
+</div>
