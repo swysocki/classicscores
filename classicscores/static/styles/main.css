@@ -5,106 +5,103 @@
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    color: #526066;
-    font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #526066;
+  font-family: "Roboto", sans-serif;
 }
 
 h2,
 h3 {
-    letter-spacing: 0.05em;
-    font-weight: 600;
+  letter-spacing: 0.05em;
+  font-weight: 600;
 }
 
 p {
-    line-height: 1.6em;
-    font-size: 1.2em;
-    font-weight: 600;
+  line-height: 1.6em;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 table {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .max-width-wrapper {
-    max-width: 980px;
-    margin: 0px auto;
+  max-width: 980px;
+  margin: 0px auto;
 }
 
 a {
-    text-decoration: none;
-    color: lightslategray;
+  text-decoration: none;
+  color: lightslategray;
 }
 
 i.arrow {
-    border: solid lightslategray;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+  border: solid lightslategray;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
 
 .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
-
 
 /*
  * -- Main Content --
  */
 
 .pure-margins {
-    margin: 0.5em;
+  margin: 0.5em;
 }
-
 
 /* plain links */
 
 .tourny-links {
-    text-decoration: none;
-    color: darkslategray;
-    padding: 5px 5px 5px 0px;
-    display: inline-block;
+  text-decoration: none;
+  color: darkslategray;
+  padding: 5px 5px 5px 0px;
+  display: inline-block;
 }
 
 .l-content {
-    border-top-color: grey;
-    border-top-style: solid;
-    border-top-width: thin;
-    flex: 1 0 auto;
+  border-top-color: grey;
+  border-top-style: solid;
+  border-top-width: thin;
+  flex: 1 0 auto;
+  padding: 1em 2em;
 }
 
 .l-box {
-    padding: 1em;
-    background-color: #fafbfc;
-    min-height: 20em;
-    border-radius: 5px;
-    border: 1px solid rgba(184, 196, 194, 0.25);
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background-color: #fafbfc;
+  min-height: 20em;
+  border-radius: 5px;
+  border: 1px solid rgba(184, 196, 194, 0.25);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .l-box-clear {
-    background-color: white;
+  background-color: white;
 }
-
 
 /* wrap scores tables for more space */
 
 .pure-table {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
 }
 
 .pure-table thead {
-    color: #006A37;
+  color: #006a37;
 }
-
 
 /*
  * -- MENU STYLES --
@@ -112,40 +109,38 @@ i.arrow {
  */
 
 .pure-menu-link {
-    padding: .5em .7em;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    color: #006A37;
-    font-family: Roboto;
+  padding: 0.5em 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #006a37;
+  font-family: Roboto;
 }
 
 .pure-menu-right {
-    text-align: right;
+  text-align: right;
 }
 
 .pure-menu-heading {
-    padding: 0px 0px;
-    font-family: 'Yesteryear', cursive;
-    text-transform: none;
-    font-size: 250%;
-    color: #006A37;
+  padding: 0px 0px;
+  font-family: "Yesteryear", cursive;
+  text-transform: none;
+  font-size: 250%;
+  color: #006a37;
 }
-
 
 /*
  * button color override
  */
 
 a.pure-button-primary {
-    background-color: #006A37;
+  background-color: #006a37;
 }
 
 .button-xsmall {
-    font-size: 60%;
-    padding: .3em;
-    margin-left: .5em;
+  font-size: 60%;
+  padding: 0.3em;
+  margin-left: 0.5em;
 }
-
 
 /*
  * -- BANNER --
@@ -155,199 +150,193 @@ a.pure-button-primary {
  */
 
 .banner {
-    background: transparent url('/static/images/blur_banner2.jpg') 0 80% no-repeat fixed;
-    text-align: center;
-    background-size: cover;
-    height: 200px;
-    width: 100%;
-    display: table;
+  background: transparent url("/static/images/blur_banner2.jpg") 0 80% no-repeat
+    fixed;
+  text-align: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  display: table;
 }
 
 .banner-head {
-    display: table-cell;
-    vertical-align: middle;
-    margin-bottom: 0;
-    color: white;
-    font-weight: 500;
-    text-shadow: 0 1px 1px black;
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0 1px 1px black;
 }
-
 
 /*
  * -- PANEL TABLE WRAPPER --
  * This element wraps up all the panel section elements
  */
 
-
 /* override the icon color */
 
 .fa-2x {
-    color: #006A37;
-    /*color: white;*/
+  color: #006a37;
+  /*color: white;*/
 }
 
 .panel-wrapper {
-    background-color: #edeff0;
-    padding: 3em;
+  background-color: #edeff0;
+  padding: 3em;
 }
 
 .panel-tables {
-    text-align: center;
+  text-align: center;
 }
 
 .panel-tables a {
-    margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 .panel-tables h2 {
-    color: #006A37;
+  color: #006a37;
 }
-
 
 /* Calendar style
 */
 
 .calendar {
-    width: 98%;
-    margin: auto;
-    font-size: 13px;
-    letter-spacing: normal;
+  width: 98%;
+  margin: auto;
+  font-size: 13px;
+  letter-spacing: normal;
 }
 
 .calendar tr:nth-child(1) {
-    border: none;
+  border: none;
 }
 
 .calendar tr,
 .calendar td {
-    border: 1px solid black;
-    vertical-align: top;
+  border: 1px solid black;
+  vertical-align: top;
 }
 
 .calendar th {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .calendar td {
-    width: 200px;
-    height: 150px;
-    padding: 20px 0px 0px 5px;
+  width: 200px;
+  height: 150px;
+  padding: 20px 0px 0px 5px;
 }
 
 .calendar-nav-right {
-    text-align: right;
+  text-align: right;
 }
 
 .calendar-nav {
-    padding: 15px;
+  padding: 15px;
 }
 
 .month {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .date {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .event h3 {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 .event p {
-    margin-top: .2em;
-    font-size: .9em;
-    line-height: 1.4em;
-    font-weight: 200;
+  margin-top: 0.2em;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  font-weight: 200;
 }
 
 .event a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .event-nav {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    color: #006A37;
-    text-transform: uppercase;
-    font-size: .8em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #006a37;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 .event-nav a {
-    color: inherit;
+  color: inherit;
 }
-
 
 /*
 * -- List table styles
 */
 
 .tournament {
-    letter-spacing: 0;
-    max-width: 980px;
-    text-transform: none;
-    font-family: "Roboto", sans-serif;
-    margin: 0 auto;
-    padding: 10px;
+  letter-spacing: 0;
+  max-width: 980px;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
 }
 
 .tournament h2 {
-    text-transform: none;
-    letter-spacing: 0;
-    margin-bottom: 0.2em;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0.2em;
 }
 
 .tournament h3 {
-    text-align: left;
-    letter-spacing: 0;
-    text-transform: none;
-    margin-top: 0em;
-    margin-bottom: .5em;
-    display: inline-block;
+  text-align: left;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+  display: inline-block;
 }
 
 .tournament tr {
-    text-align: left;
+  text-align: left;
 }
-
 
 /* 
 * -- Footer Styles
 */
 
 .footer {
-    padding: 1em 2em;
-    line-height: 1em;
-    background-color: #ddd;
+  padding: 1em 2em;
+  line-height: 1em;
+  background-color: #ddd;
 }
 
 .footer-spacing {
-    max-width: 980px;
-    margin: 0 auto;
-    text-align: left;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .footer-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .footer-item {
-    padding: .25em 0em;
-    font-size: .9em;
+  padding: 0.25em 0em;
+  font-size: 0.9em;
 }
 
 a.footer-item {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-base {
-    background-color: #006A37;
-    color: lightgray;
-    font-size: .8em;
+  background-color: #006a37;
+  color: lightgray;
+  font-size: 0.8em;
 }
-
 
 /*
  * -- TABLET MEDIA QUERIES --
@@ -355,15 +344,14 @@ a.footer-item {
  * text and add some vertical space between the various pricing tables
  */
 
-@media(min-width: 767px) {
-    .banner-head {
-        font-size: 2em;
-    }
-    .pricing-table {
-        margin-bottom: 0;
-    }
+@media (min-width: 767px) {
+  .banner-head {
+    font-size: 2em;
+  }
+  .pricing-table {
+    margin-bottom: 0;
+  }
 }
-
 
 /*
  * -- PHONE MEDIA QUERIES --
@@ -371,10 +359,10 @@ a.footer-item {
  */
 
 @media (min-width: 480px) {
-    .banner {
-        height: 400px;
-    }
-    .banner-head {
-        font-size: 3em;
-    }
+  .banner {
+    height: 400px;
+  }
+  .banner-head {
+    font-size: 3em;
+  }
 }
