@@ -5,7 +5,15 @@
 {% block content %}
 <div class="l-content">
     <div class="pure-g max-width-wrapper">
-            <h2>{{ event_nav.current|date:"F Y"}}</h2>
+            {% if result|length < 1 %}
+            <div class="pure-u-1 event-image">
+                <p>Sorry! No events right now, here's a cool classic paintball photo instead:</p>
+                {% load static %}
+                <img src="{% static 'images/diggers_dallas99_69.jpg' %}" /> 
+            </div>
+            {% endif %}
+           
+            
             {% for event in result %}
                 <div class="event pure-u-1">
 
@@ -15,7 +23,7 @@
                     {% elif event.event_type == "SCEN" %}
                     <i class="fas fa-square fa-sm" style="color:lightblue"></i> {{ event.name }}</h3>
                     {% elif event.event_type == "BIG" %}
-                    <i class="fas fa-square fa-sm" style="color:lightyellow"></i> {{ event.name }}</h3>
+                    <i class="fas fa-square fa-sm" style="color:lightseagreen"></i> {{ event.name }}</h3>
                     {% else %}
                     <i class="fas fa-square fa-sm" style="color:lightcoral"></i> {{ event.name }}</h3>
                     {% endif %}
@@ -30,14 +38,18 @@
                 </div>
   
             {% endfor %}
+            {% if result.has_previous %}
             <div class="event-nav pure-u-1-2">
                 <i class="fas fa-angle-double-left"></i>
-                <a href="/calendar/{{ event_nav.previous|date:'Y' }}/{{ event_nav.previous|date:'m' }}">previous</a>
+                <a href="/calendar/?page={{ result.previous_page_number }}">previous</a>
             </div>
+            {% endif %}
+            {% if result.has_next %}
             <div class="event-nav pure-u-1-2">
-                <a href="/calendar/{{ event_nav.next|date:'Y' }}/{{ event_nav.next|date:'m' }}">next </a>
+                <a href="/calendar/?page={{ result.next_page_number }}">next </a>
                 <i class="fas fa-angle-double-right"></i>
             </div>
+            {% endif %}
     </div>
 </div>
 {% endblock content %}

@@ -21,5 +21,5 @@ urlpatterns = [
     path('tournaments/', include('tournaments.urls')),
     path('media/', include('media.urls')),
     path('admin/', admin.site.urls),
-    path('calendar/', include('eventcal.urls'))
+    path('events/', include('eventcal.urls'))
 ]
