@@ -16,6 +16,7 @@ class Tournament(models.Model):
         ("CFOA", "Carolina Field Owners Association"),
         ("WTS", "Woodsball Tournament Series"),
         ("INDY", "Independent Event"),
+        ("WWC", "Woodsball World Cup"),
     ]
     pub_date = models.DateField("date published")
     league = models.CharField(max_length=50, choices=LEAGUE_CHOICES)
