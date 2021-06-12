@@ -61,6 +61,90 @@ i.arrow {
   margin: 0.5em;
 }
 
+/* responsive menu */
+.custom-brand {
+  font-family: "Yesteryear", cursive;
+  text-transform: none;
+  color: #006a37;
+  font-size: 1.6em;
+  padding: 0em 1em;
+}
+
+.custom-wrapper {
+  -webkit-font-smoothing: antialiased;
+  height: 2.1em;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+  height: 14em;
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.custom-toggle .bar {
+  background-color: #006a37;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+  .custom-menu-3 {
+      text-align: left;
+  }
+
+  .custom-toggle {
+      display: block;
+  }
+
+}
+
 /* plain links */
 
 .tourny-links {
@@ -109,7 +193,7 @@ i.arrow {
  */
 
 .pure-menu-link {
-  padding: 0.5em 0.7em;
+  padding: 0.5em 1em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #006a37;
@@ -118,14 +202,6 @@ i.arrow {
 
 .pure-menu-right {
   text-align: right;
-}
-
-.pure-menu-heading {
-  padding: 0px 0px;
-  font-family: "Yesteryear", cursive;
-  text-transform: none;
-  font-size: 250%;
-  color: #006a37;
 }
 
 /*
