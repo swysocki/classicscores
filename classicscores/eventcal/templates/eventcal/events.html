@@ -41,12 +41,12 @@
             {% if result.has_previous %}
             <div class="event-nav pure-u-1-2">
                 <i class="fas fa-angle-double-left"></i>
-                <a href="/calendar/?page={{ result.previous_page_number }}">previous</a>
+                <a href="/events/?page={{ result.previous_page_number }}">previous</a>
             </div>
             {% endif %}
             {% if result.has_next %}
             <div class="event-nav pure-u-1-2">
-                <a href="/calendar/?page={{ result.next_page_number }}">next </a>
+                <a href="/events/?page={{ result.next_page_number }}">next </a>
                 <i class="fas fa-angle-double-right"></i>
             </div>
             {% endif %}
