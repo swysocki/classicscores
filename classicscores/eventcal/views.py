@@ -8,7 +8,7 @@ from loguru import logger
 
 def events(request, year=date.today().year, month=date.today().month):
     event_list = Event.objects.filter(start_date__gte=date(year, month, 1)).order_by('start_date')
-    paginator = Paginator(event_list, 2)
+    paginator = Paginator(event_list, 5)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     logger.debug(page_obj)
