@@ -29,3 +29,7 @@ class Event(models.Model):
     tournament = models.ForeignKey(
         "tournaments.Tournament", blank=True, null=True, on_delete=models.SET_NULL
     )
+
+    def __str__(self):
+        return f"{self.name}-{self.location_name}"
+    
