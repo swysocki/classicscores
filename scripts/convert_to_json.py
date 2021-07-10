@@ -1,11 +1,22 @@
-import csv, json
-from pprint import pprint
-from operator import itemgetter
+import csv
+import json
 from itertools import groupby
+from operator import itemgetter
+
+""" SQL query to copy data in the proper format
+
+\copy (SELECT
+year, league, location, name, division, tournament_format as format, team, place
+FROM tournaments_tournament
+FULL JOIN tournaments_score
+ON tournaments_tournament.id = tournaments_score.tournament_id)
+TO 'db_dump.csv'
+WITH DELIMITER ';' CSV HEADER;
+"""
 
 
 def get_data_fields(fields):
-    """ Returns the data field indexes"""
+    """Returns the data field indexes"""
     print(fields)
     tourn_fields = itemgetter(
         fields.index("year"),
@@ -19,7 +30,6 @@ def get_data_fields(fields):
         fields.index("team"),
         fields.index("place"),
     )
-
 
     return tourn_fields, result_fields
 
@@ -64,10 +74,11 @@ def aggregate_results(tourn_list):
         t_list.append(tourn)
     return t_list
 
+
 if __name__ == "__main__":
-    with open('data.csv') as f:
-        d = csv.reader(f)
+    with open("data.csv") as f:
+        d = csv.reader(f, delimiter=";")
         l = list(d)
         results = aggregate_results(l)
-    with open('data.json', "w") as df:
+    with open("data.json", "w") as df:
         json.dump(results, df)
