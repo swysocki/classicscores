@@ -2,6 +2,21 @@ var tournamentData;
 var yearCount;
 var leagueCount;
 
+var leagueMap = {
+    NPPL: "National Professional Paintball League",
+    GWS: "Great Western Series",
+    MSPA: "MidSouth Paintball Association",
+    ICPL: "International Classic Paintball League",
+    UWL: "Ultimate Woodsball League",
+    IAO: "International Amateur Open",
+    WTS: "Woodsball Tournament Series",
+    WCCP: "West Coast Classic Paintball",
+    WPF: "World Paintball Federation",
+    PRA: "Professional Referee Association",
+    CFOA: "Carolina Field Owners Association",
+    INDY: "Independent Events",
+}
+
 function displayStats() {
     document.getElementById("tournament-count").textContent = tournamentData.length + " Tournaments";
 
@@ -42,7 +57,13 @@ function createSelector(data, name) {
     for (item of data) {
         var option = document.createElement("option");
         option.value = item;
-        option.text = item;
+        if (name == "league") {
+            console.log(item)
+            option.text = leagueMap[item]
+        }
+        else {
+            option.text = item;
+        }
         SelectList.appendChild(option);
     }
 }
