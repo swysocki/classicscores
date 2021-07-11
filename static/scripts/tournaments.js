@@ -18,6 +18,34 @@ var leagueMap = {
     WWC: "Woodsball World Cup",
 }
 
+var divisionMap = {
+    AM: "Amateur",
+    AMA: "Amateur A",
+    AMB: "Amateur B",
+    PRO: "Pro",
+    NOV: "Novice",
+    SP: "SemiPro",
+    OP: "Open",
+    RK: "Rookie",
+    D1: "Division 1",
+    D2: "Division 2",
+    D3: "Division 3",
+    D4: "Division 4",
+    D5: "Division 5",
+    TCT: "Tactical",
+    UNK: "Unknown",
+    COL: "College",
+    YNG: "Young Guns",
+}
+
+var formatMap = {
+    "10M": "10 Man",
+    "5M": "5 Man",
+    "7M": "7 Man",
+    "3M": "3 Man",
+    "XB": "Xball",
+}
+
 function displayStats() {
     document.getElementById("tournament-count").textContent = tournamentData.length + " Tournaments";
 
@@ -144,8 +172,8 @@ function createResultTable(data) {
                 let scoreRow = body.insertRow();
                 scoreRow.insertCell(0).textContent = result.place;
                 scoreRow.insertCell(1).textContent = result.team;
-                scoreRow.insertCell(2).textContent = tournament.division;
-                scoreRow.insertCell(3).textContent = tournament.format;
+                scoreRow.insertCell(2).textContent = divisionMap[tournament.division];
+                scoreRow.insertCell(3).textContent = formatMap[tournament.format];
             }
             let blankRow = body.insertRow();
             blankRow.insertCell(0).setAttribute("colspan", "4");
