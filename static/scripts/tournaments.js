@@ -15,6 +15,7 @@ var leagueMap = {
     PRA: "Professional Referee Association",
     CFOA: "Carolina Field Owners Association",
     INDY: "Independent Events",
+    WWC: "Woodsball World Cup",
 }
 
 function displayStats() {
