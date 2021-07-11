@@ -59,7 +59,6 @@ function createSelector(data, name) {
         var option = document.createElement("option");
         option.value = item;
         if (name == "league") {
-            console.log(item)
             option.text = leagueMap[item]
         }
         else {
@@ -82,7 +81,7 @@ function getResultByValue(selectObject) {
 
 function createTournamentHeading(element, tournament) {
     var heading = document.createElement("h2");
-    var text = document.createTextNode(tournament.year + " - " + tournament.league);
+    var text = document.createTextNode(tournament.year + " - " + leagueMap[tournament.league]);
     heading.appendChild(text);
     element.appendChild(heading);
 
@@ -119,22 +118,10 @@ function groupTournaments(tournResults) {
     return results
 }
 
-function sortByProperty(property) {
-    return function(a, b) {
-        let comparison = 0;
-        if (a[property] > b[property]) {
-            comparison = 1;
-        } else if (a[property] < b[property]) {
-            comparison = -1;
-        }
-        return comparison;
-    }
-}
-
 
 function createResultTable(data) {
     document.getElementById("result-container").innerHTML = "";
-    data.sort(sortByProperty("year"));
+    data.sort((a, b) => a.year - b.year);
     for (item of data) {
         container = document.getElementById("result-container");
         createTournamentHeading(container, item);
@@ -152,7 +139,7 @@ function createResultTable(data) {
 
         groups = groupTournaments(item.results);
         for (tournament of groups) {
-            tournament.results.sort(sortByProperty("place"));
+            tournament.results.sort((a, b) => a.place - b.place)
             for (result of tournament.results) {
                 let scoreRow = body.insertRow();
                 scoreRow.insertCell(0).textContent = result.place;
