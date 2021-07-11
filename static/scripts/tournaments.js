@@ -154,19 +154,22 @@ function createResultTable(data) {
         container = document.getElementById("result-container");
         createTournamentHeading(container, item);
 
-        var table = document.createElement("table");
-        table.setAttribute("class", "pure-table pure-table-horizontal score-table");
-        header = table.createTHead();
-        let row = header.insertRow(0);
-        row.insertCell(0).textContent = "Place";
-        row.insertCell(1).textContent = "Team";
-        row.insertCell(2).textContent = "Division";
-        row.insertCell(3).textContent = "Format";
-        container.appendChild(table);
-        body = table.createTBody();
+
 
         groups = groupTournaments(item.results);
         for (tournament of groups) {
+
+            var table = document.createElement("table");
+            table.setAttribute("class", "pure-table pure-table-horizontal score-table");
+            header = table.createTHead();
+            let row = header.insertRow(0);
+            row.insertCell(0).textContent = "Place";
+            row.insertCell(1).textContent = "Team";
+            row.insertCell(2).textContent = "Division";
+            row.insertCell(3).textContent = "Format";
+            container.appendChild(table);
+            body = table.createTBody();
+
             tournament.results.sort((a, b) => a.place - b.place)
             for (result of tournament.results) {
                 let scoreRow = body.insertRow();
@@ -175,8 +178,7 @@ function createResultTable(data) {
                 scoreRow.insertCell(2).textContent = divisionMap[tournament.division];
                 scoreRow.insertCell(3).textContent = formatMap[tournament.format];
             }
-            let blankRow = body.insertRow();
-            blankRow.insertCell(0).setAttribute("colspan", "4");
+
         }
     }
 }
