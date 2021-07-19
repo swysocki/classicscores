@@ -166,10 +166,10 @@ function createResultTable(data) {
       table.setAttribute("class", "col-sm-12 col-md-8 col-lg-6");
       header = table.createTHead();
       let row = header.insertRow(0);
-      row.insertCell(0).textContent = "Place";
-      row.insertCell(1).textContent = "Team";
-      row.insertCell(2).textContent = "Division";
-      row.insertCell(3).textContent = "Format";
+      row.insertCell(0).outerHTML = "<th>Place</th>";
+      row.insertCell(1).outerHTML = "<th>Team</th>";
+      row.insertCell(2).outerHTML = "<th>Division</th>";
+      row.insertCell(3).outerHTML = "<th>Format</th>";
       container.appendChild(table);
       body = table.createTBody();
 
