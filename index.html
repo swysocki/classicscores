@@ -5,7 +5,7 @@
     <title>Classic Scores</title>
     <link
       rel="stylesheet"
-      href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"
+      href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-nord.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="prefetch" href="/static/data/tournament_data.json" as="fetch" />
@@ -18,6 +18,7 @@
   <body>
     <header>
       <a href="/" class="logo">ClassicScores</a>
+      <a href="https://github.com/swysocki/classicscores" class="button">Contact</a>
     </header>
     <div class="container">
       <div class="row">
@@ -30,17 +31,11 @@
       </div>
       <div class="content">
         <div id="result-container" class="pure-u-1">
-          <div class="hero-image">
-            <div class="stats">
-              <h3 class="content" id="scores-count"></h3>
-              <h3 class="content" id="tournament-count"></h3>
-              <h3 class="content" id="year-count"></h3>
-              <h3 class="content" id="league-count"></h3>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-    <footer><p>copyright 2020 www.classicscores.com</p></footer>
+    <footer>
+      <p id="stats"></p>
+    </footer>
   </body>
 </html>

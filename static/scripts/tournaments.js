@@ -47,17 +47,12 @@ var formatMap = {
 };
 
 function displayStats() {
-  document.getElementById("tournament-count").textContent =
-    tournamentData.length + " Tournaments";
-
   let scoresCount = 0;
   for (score of tournamentData) {
     scoresCount += score.results.length;
   }
-  document.getElementById("scores-count").textContent = scoresCount + " Scores";
-  document.getElementById("year-count").textContent = yearCount + " Years";
-  document.getElementById("league-count").textContent =
-    leagueCount + " Leagues";
+  footerText = `© 2021 ClassicScores <span style="color: steelblue">| ${ yearCount } Years | ${ scoresCount } Scores</span>`
+  document.getElementById("stats").innerHTML = footerText;
 }
 
 function getYears(scoresData) {
@@ -211,5 +206,8 @@ fetch("/static/data/tournament_data.json")
     tournamentData = json;
     createMenu();
     displayStats();
+    res = document.getElementById("year-selector");
+    res.value = "1992";
+    getResultByValue(res);
   })
   .catch(console.error);
