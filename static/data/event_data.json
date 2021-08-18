@@ -6,7 +6,8 @@
    "event_type": "SCEN",
    "location": "Command Decisions Wargame Center",
    "address": "84 Reganswood Drive",
-   "city": "Taylorsville NC, 28681"
+   "city": "Taylorsville NC, 28681",
+   "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.cdwargames.com%2Fheartbreak-ridge.html%3Ffbclid%3DIwAR2uhKaA614oD6q73JGS4-z-rvjg83ibTIw1l9ymqR-BnTsNlPGsLLOMC2s&h=AT3-8b5tldETR629NIn-1bD8zhVyvR61_m01G"
  },
  {
    "name": "Dreaded Legends",
@@ -15,8 +16,9 @@
    "event_type": "SCEN",
    "location": "Black Ops Paintball/Airsoft Myrtle Beach",
    "address": "6650 Hwy 707",
-   "city": "Myrtle Beach SC, 29588"
- },
+   "city": "Myrtle Beach SC, 29588",
+   "url": "https://fb.me/e/1sMDDz1NZ"
+  },
  {
    "name": "SuperGame MD",
    "start_date": "2021-08-20",
@@ -24,7 +26,8 @@
    "event_type": "BIG",
    "location": "Outdoor Xtreme Chesapeake City Paintball & Airsoft",
    "address": "2941 Old Telegraph Rd",
-   "city": "Chesapeake City MD 21915"
+   "city": "Chesapeake City MD 21915",
+   "url": "https://fb.me/e/5vQVu3CB3"
  },
  {
    "name": "Woodsball World Cup",
@@ -33,7 +36,8 @@
    "event_type": "TRN",
    "location": "Paintball Sports Inc.",
    "address": "230 Camp Sunset Rd",
-   "city": "Plattekill NY, 12528"
+   "city": "Plattekill NY, 12528",
+   "url": "http://woodsballworldcup.com/"
  },
  {
    "name": "10 Man Hyperball",
@@ -42,7 +46,8 @@
    "event_type": "TRN",
    "location": "P & L Paintball Park",
    "address": "1221 Bedford Street",
-   "city": "Bridgewater MA, 02324"
+   "city": "Bridgewater MA, 02324",
+   "url": "https://www.pnlpaintball.com/10-man"
  },
  {
    "name": "Illinois Player Open",
@@ -51,7 +56,8 @@
    "event_type": "TRN",
    "location": "Fox Paintball",
    "address": "1939 S. Bridge St.",
-   "city": "Yorkville IL 60560"
+   "city": "Yorkville IL 60560",
+   "url": "https://fb.me/e/5n6A1Bxfw"
  },
  {
    "name": "Road to ICC",
@@ -60,7 +66,8 @@
    "event_type": "PRAC",
    "location": "Albany Paintball Experience",
    "address": "3167 US Highway 20",
-   "city": "Nassau NY, 12123"
+   "city": "Nassau NY, 12123",
+   "url": "https://fb.me/e/3AwqVg2OL"
  },
  {
    "name": "GRC 10 Man",
@@ -69,7 +76,8 @@
    "event_type": "TRN",
    "location": "GRC Paintball",
    "address": "5907 Van Allen Rd",
-   "city": "Angelica NY, 14711"
+   "city": "Angelica NY, 14711",
+   "url": "https://www.grcpaintball.com/"
  },
  {
    "name": "5 Man Hyperball Mech Scrimmage",
@@ -78,7 +86,8 @@
    "event_type": "PRAC",
    "location": "Extreme Paintball Park",
    "address": "3545 Douglas Rd",
-   "city": "Millstadt IL, 62260"
+   "city": "Millstadt IL, 62260",
+   "url": "https://www.facebook.com/groups/2572930999485598/permalink/3872896326155719/"
  },
  {
    "name": "PBSL Colorado Season Finale",
@@ -87,7 +96,8 @@
    "event_type": "TRN",
    "location": "Dynamic Paintball",
    "address": "29701 E. JEWELL AVE",
-   "city": "Aurora CO, 80018"
+   "city": "Aurora CO, 80018",
+   "url": "https://www.eventbrite.com/e/pbsl-colorado-season-1-final-tickets-159743086873"
  },
  {
    "name": "NW Rogue 5-man Mech",
@@ -96,7 +106,8 @@
    "event_type": "TRN",
    "location": "Splat Action Paintball Park",
    "address": "32155 S. Grimm Rd",
-   "city": "Molalla OR, 97038"
+   "city": "Molalla OR, 97038",
+   "url": "https://fb.me/e/boPzHIbbj"
  },
  {
    "name": "MSPA 5 man Mechanical",
@@ -105,7 +116,8 @@
    "event_type": "TRN",
    "location": "Mt. Doom Paintball & Airsoft Field",
    "address": "3071 Co Rd 515",
-   "city": "Hanceville AL, 35077"
+   "city": "Hanceville AL, 35077",
+   "url": "https://www.facebook.com/groups/525377754508205/events"
  },
  {
    "name": "Mech Day #1",
@@ -114,6 +126,7 @@
    "event_type": "PRAC",
    "location": "Tank's Paintball Park",
    "address": "22011 Southwest Freeway",
-   "city": "Richmond TX, 77469"
+   "city": "Richmond TX, 77469",
+   "url": "https://fb.me/e/14lB0DG5S"
  }
 ]
