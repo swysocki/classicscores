@@ -28,13 +28,11 @@ function getDates(startDate, endDate) {
 function eventDisplay(pbEvent) {
   for (item of pbEvent) {
     container = document.getElementById("event-container");
-    var title = document.createElement("h3");
-    title.innerHTML = `${item.name}<small><span class="icon-location"></span>${item.location}</small>`;
+    var title = document.createElement("h4");
+    title.innerHTML = `${item.name}<small>${getDates(item.start_date, item.end_date)}</small>`;
     container.appendChild(title);
     var para = document.createElement("p");
-    dateString = getDates(item.start_date, item.end_date);
-    para.innerHTML = `${dateString}<br />
-      <span class="icon-location"></span><b>${item.location}</b><br />
+    para.innerHTML = `<span class="icon-location"></span><b>${item.location}</b><br />
       ${item.address}<br />
       ${item.city}<br />
       <a href=${item.url}>Event Link</a>`;
