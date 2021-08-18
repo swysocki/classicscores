@@ -30,6 +30,7 @@ function eventDisplay(pbEvent) {
     container = document.getElementById("event-container");
     var title = document.createElement("h4");
     title.innerHTML = `${item.name}<small>${getDates(item.start_date, item.end_date)}</small>`;
+    title.setAttribute("style", "margin-bottom: 0em;")
     container.appendChild(title);
     var para = document.createElement("p");
     para.innerHTML = `<span class="icon-location"></span><b>${item.location}</b><br />
