@@ -1,104 +1,104 @@
 [
  {
    "name": "Battle of Hearbreak Ridge",
-   "start_date": "2021-05-29 07:00:00+00",
-   "end_date": "2021-05-30 16:00:00+00",
+   "start_date": "2021-05-29",
+   "end_date": "2021-05-30",
    "event_type": "SCEN",
    "location": "Command Decisions Wargame Center",
    "address": "84 Reganswood Drive Taylorsville NC 28681"
  },
  {
    "name": "Dreaded Legends",
-   "start_date": "2021-06-18 08:00:00+00",
-   "end_date": "2021-06-20 17:00:00+00",
+   "start_date": "2021-06-18",
+   "end_date": "2021-06-20",
    "event_type": "SCEN",
    "location": "Black Ops Paintball/Airsoft Myrtle Beach",
    "address": "6650 Hwy 707 Myrtle Beach SC 29588"
  },
  {
    "name": "SuperGame MD",
-   "start_date": "2021-08-20 10:00:00+00",
-   "end_date": "2021-08-22 15:30:00+00",
+   "start_date": "2021-08-20",
+   "end_date": "2021-08-22",
    "event_type": "BIG",
    "location": "Outdoor Xtreme Chesapeake City Paintball & Airsoft",
    "address": "2941 Old Telegraph Rd Chesapeake City MD 21915"
  },
  {
    "name": "Woodsball World Cup",
-   "start_date": "2021-05-14 09:00:00+00",
-   "end_date": "2021-05-16 17:00:00+00",
+   "start_date": "2021-05-14",
+   "end_date": "2021-05-16",
    "event_type": "TRN",
    "location": "Paintball Sports Inc.",
    "address": "230 Camp Sunset Rd Plattekill NY 12528"
  },
  {
    "name": "10 Man Hyperball",
-   "start_date": "2021-07-10 10:00:00+00",
-   "end_date": "2021-07-11 17:00:00+00",
+   "start_date": "2021-07-10",
+   "end_date": "2021-07-11",
    "event_type": "TRN",
    "location": "P & L Paintball Park",
    "address": "1221 Bedford Street Bridgewater MA 02324"
  },
  {
    "name": "Illinois Player Open",
-   "start_date": "2021-06-25 09:00:00+00",
-   "end_date": "2021-06-26 17:00:00+00",
+   "start_date": "2021-06-25",
+   "end_date": "2021-06-26",
    "event_type": "TRN",
    "location": "Fox Paintball",
    "address": "1939 S. Bridge St. Yorkville IL 60560"
  },
  {
    "name": "Road to ICC",
-   "start_date": "2021-07-24 10:00:00+00",
-   "end_date": "2021-07-25 16:00:00+00",
+   "start_date": "2021-07-24",
+   "end_date": "2021-07-25",
    "event_type": "PRAC",
    "location": "Albany Paintball Experience",
    "address": "3167 US Highway 20 Nassau NY 12123"
  },
  {
    "name": "GRC 10 Man",
-   "start_date": "2021-07-11 10:00:00+00",
-   "end_date": "2021-07-11 18:00:00+00",
+   "start_date": "2021-07-11",
+   "end_date": "2021-07-11",
    "event_type": "TRN",
    "location": "GRC Paintball",
    "address": "5907 Van Allen Rd Angelica NY 14711"
  },
  {
    "name": "5 Man Hyperball Mech Scrimmage",
-   "start_date": "2021-07-24 09:00:00+00",
-   "end_date": "2021-07-24 18:00:00+00",
+   "start_date": "2021-07-24",
+   "end_date": "2021-07-24",
    "event_type": "PRAC",
    "location": "Extreme Paintball Park",
    "address": "3545 Douglas Rd Millstadt IL 62260"
  },
  {
    "name": "PBSL Colorado Season Finale",
-   "start_date": "2021-08-28 09:00:00+00",
-   "end_date": "2021-08-29 17:00:00+00",
+   "start_date": "2021-08-28",
+   "end_date": "2021-08-29",
    "event_type": "TRN",
    "location": "Dynamic Paintball",
    "address": "29701 E. JEWELL AVE Aurora CO 80018"
  },
  {
    "name": "NW Rogue 5-man Mech",
-   "start_date": "2021-09-12 11:30:00+00",
-   "end_date": "2021-09-12 17:00:00+00",
+   "start_date": "2021-09-12",
+   "end_date": "2021-09-12",
    "event_type": "TRN",
    "location": "Splat Action Paintball Park",
    "address": "32155 S. Grimm Rd Molalla OR 97038"
  },
  {
    "name": "MSPA 5 man Mechanical",
-   "start_date": "2021-08-29 09:00:00+00",
-   "end_date": "2021-08-29 17:00:00+00",
+   "start_date": "2021-08-29",
+   "end_date": "2021-08-29",
    "event_type": "TRN",
    "location": "Mt. Doom Paintball & Airsoft Field",
    "address": "3071 Co Rd 515 Hanceville AL 35077"
  },
  {
    "name": "Mech Day #1",
-   "start_date": "2021-08-22 11:00:00+00",
-   "end_date": "2021-08-22 17:00:00+00",
+   "start_date": "2021-08-22",
+   "end_date": "2021-08-22",
    "event_type": "PRAC",
    "location": "Tank's Paintball Park",
    "address": "22011 Southwest Freeway Richmond TX 77469"
