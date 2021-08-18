@@ -5,7 +5,8 @@
    "end_date": "2021-05-30",
    "event_type": "SCEN",
    "location": "Command Decisions Wargame Center",
-   "address": "84 Reganswood Drive Taylorsville NC 28681"
+   "address": "84 Reganswood Drive",
+   "city": "Taylorsville NC, 28681"
  },
  {
    "name": "Dreaded Legends",
@@ -13,7 +14,8 @@
    "end_date": "2021-06-20",
    "event_type": "SCEN",
    "location": "Black Ops Paintball/Airsoft Myrtle Beach",
-   "address": "6650 Hwy 707 Myrtle Beach SC 29588"
+   "address": "6650 Hwy 707",
+   "city": "Myrtle Beach SC, 29588"
  },
  {
    "name": "SuperGame MD",
@@ -21,7 +23,8 @@
    "end_date": "2021-08-22",
    "event_type": "BIG",
    "location": "Outdoor Xtreme Chesapeake City Paintball & Airsoft",
-   "address": "2941 Old Telegraph Rd Chesapeake City MD 21915"
+   "address": "2941 Old Telegraph Rd",
+   "city": "Chesapeake City MD 21915"
  },
  {
    "name": "Woodsball World Cup",
@@ -29,7 +32,8 @@
    "end_date": "2021-05-16",
    "event_type": "TRN",
    "location": "Paintball Sports Inc.",
-   "address": "230 Camp Sunset Rd Plattekill NY 12528"
+   "address": "230 Camp Sunset Rd",
+   "city": "Plattekill NY, 12528"
  },
  {
    "name": "10 Man Hyperball",
@@ -37,7 +41,8 @@
    "end_date": "2021-07-11",
    "event_type": "TRN",
    "location": "P & L Paintball Park",
-   "address": "1221 Bedford Street Bridgewater MA 02324"
+   "address": "1221 Bedford Street",
+   "city": "Bridgewater MA, 02324"
  },
  {
    "name": "Illinois Player Open",
@@ -45,7 +50,8 @@
    "end_date": "2021-06-26",
    "event_type": "TRN",
    "location": "Fox Paintball",
-   "address": "1939 S. Bridge St. Yorkville IL 60560"
+   "address": "1939 S. Bridge St.",
+   "city": "Yorkville IL 60560"
  },
  {
    "name": "Road to ICC",
@@ -53,7 +59,8 @@
    "end_date": "2021-07-25",
    "event_type": "PRAC",
    "location": "Albany Paintball Experience",
-   "address": "3167 US Highway 20 Nassau NY 12123"
+   "address": "3167 US Highway 20",
+   "city": "Nassau NY, 12123"
  },
  {
    "name": "GRC 10 Man",
@@ -61,7 +68,8 @@
    "end_date": "2021-07-11",
    "event_type": "TRN",
    "location": "GRC Paintball",
-   "address": "5907 Van Allen Rd Angelica NY 14711"
+   "address": "5907 Van Allen Rd",
+   "city": "Angelica NY, 14711"
  },
  {
    "name": "5 Man Hyperball Mech Scrimmage",
@@ -69,7 +77,8 @@
    "end_date": "2021-07-24",
    "event_type": "PRAC",
    "location": "Extreme Paintball Park",
-   "address": "3545 Douglas Rd Millstadt IL 62260"
+   "address": "3545 Douglas Rd",
+   "city": "Millstadt IL, 62260"
  },
  {
    "name": "PBSL Colorado Season Finale",
@@ -77,7 +86,8 @@
    "end_date": "2021-08-29",
    "event_type": "TRN",
    "location": "Dynamic Paintball",
-   "address": "29701 E. JEWELL AVE Aurora CO 80018"
+   "address": "29701 E. JEWELL AVE",
+   "city": "Aurora CO, 80018"
  },
  {
    "name": "NW Rogue 5-man Mech",
@@ -85,7 +95,8 @@
    "end_date": "2021-09-12",
    "event_type": "TRN",
    "location": "Splat Action Paintball Park",
-   "address": "32155 S. Grimm Rd Molalla OR 97038"
+   "address": "32155 S. Grimm Rd",
+   "city": "Molalla OR, 97038"
  },
  {
    "name": "MSPA 5 man Mechanical",
@@ -93,7 +104,8 @@
    "end_date": "2021-08-29",
    "event_type": "TRN",
    "location": "Mt. Doom Paintball & Airsoft Field",
-   "address": "3071 Co Rd 515 Hanceville AL 35077"
+   "address": "3071 Co Rd 515",
+   "city": "Hanceville AL, 35077"
  },
  {
    "name": "Mech Day #1",
@@ -101,6 +113,7 @@
    "end_date": "2021-08-22",
    "event_type": "PRAC",
    "location": "Tank's Paintball Park",
-   "address": "22011 Southwest Freeway Richmond TX 77469"
+   "address": "22011 Southwest Freeway",
+   "city": "Richmond TX, 77469"
  }
 ]

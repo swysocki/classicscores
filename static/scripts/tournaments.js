@@ -118,7 +118,7 @@ function createTournamentHeading(element, tournament) {
 }
 
 function groupTournaments(tournResults) {
-  // Ugly function to group by divsion + format
+  // Ugly function to group by division + format
   var groupName = {};
   var results = tournResults.reduce(function (accumulator, item) {
     var key = item.division + " - " + item.format;
