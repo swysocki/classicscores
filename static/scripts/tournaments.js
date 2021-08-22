@@ -51,7 +51,7 @@ function displayStats() {
   for (score of tournamentData) {
     scoresCount += score.results.length;
   }
-  footerText = `© 2021 ClassicScores <span style="color: steelblue">| ${ yearCount } Years | ${ scoresCount } Scores</span>`
+  footerText = `© 2021 ClassicScores | ${yearCount} Years | ${scoresCount} Scores`
   document.getElementById("stats").innerHTML = footerText;
 }
 
@@ -104,17 +104,16 @@ function getResultByValue(selectObject) {
 }
 
 function createTournamentHeading(element, tournament) {
-  var subHeading = document.createElement("h3");
+  var subHeading = document.createElement("h2");
+  var subSubHeading = document.createElement("h3");
   var nameLocation =
     (tournament.name ? tournament.name + "-" : "") + tournament.location;
-  subHeading.innerHTML =
-    tournament.year +
-    " " +
-    leagueMap[tournament.league] +
-    "<small>" +
-    nameLocation +
-    "</small>";
+  subHeading.innerHTML = `
+    ${tournament.year} ${leagueMap[tournament.league]}
+  `
+  subSubHeading.innerHTML = nameLocation;
   element.appendChild(subHeading);
+  element.appendChild(subSubHeading);
 }
 
 function groupTournaments(tournResults) {
@@ -158,7 +157,6 @@ function createResultTable(data) {
     groups = groupTournaments(item.results);
     for (tournament of groups) {
       var table = document.createElement("table");
-      table.setAttribute("class", "col-sm-12 col-md-8 col-lg-6");
       header = table.createTHead();
       let row = header.insertRow(0);
       row.insertCell(0).outerHTML = "<th>Place</th>";
@@ -166,6 +164,7 @@ function createResultTable(data) {
       row.insertCell(2).outerHTML = "<th>Division</th>";
       row.insertCell(3).outerHTML = "<th>Format</th>";
       container.appendChild(table);
+      table.insertAdjacentHTML('afterend', '&nbsp;')
       body = table.createTBody();
 
       tournament.results.sort((a, b) => a.place - b.place);
@@ -173,16 +172,12 @@ function createResultTable(data) {
         let scoreRow = body.insertRow();
         place = scoreRow.insertCell(0);
         place.textContent = result.place;
-        place.setAttribute("data-label", "Place");
         team = scoreRow.insertCell(1);
         team.textContent = result.team;
-        team.setAttribute("data-label", "Team");
         division = scoreRow.insertCell(2);
         division.textContent = divisionMap[tournament.division];
-        division.setAttribute("data-label", "Division");
         format = scoreRow.insertCell(3);
         format.textContent = formatMap[tournament.format];
-        format.setAttribute("data-label", "Format");
       }
     }
   }
