@@ -138,5 +138,24 @@
     "address": "11500 Hwy 58",
     "city": "Georgetown, TN 37336",
     "url": "https://www.facebook.com/Pursuit123/"
+  },
+  {
+    "name": "Midwest Open 7 Man",
+    "start_date": "2021-11-20",
+    "end_date": "2021-11-20",
+    "event_type": "TRN",
+    "location": "Xtreme Paintball Park",
+    "address": "3545 Douglas Rd",
+    "city": "Millstadt IL, 62260",
+    "url": "https://www.vantora.com/Paintball/XTRM/registration/default.asp?pid=6723#/"
+  },
+  {
+    "name": "MSPA Mt. Doom",
+    "start_date": "2021-10-17",
+    "end_date": "2021-10-17",
+    "event_type": "TRN",
+    "location": "3071 Co. Rd. 515",
+    "city": "Hanceville, AL 35077",
+    "url": "https://fb.me/e/2JjZW2RTc"
   }
 ]
