@@ -19,9 +19,13 @@ function stringMonth(eventDate) {
 }
 
 function getDates(startDate, endDate) {
-  let start = new Date(startDate);
+  // dates are TZ a bit err.. inconsistent in JS
+  // using dashes will end up a day off. split to use commas between date
+  // components
+  let start = new Date(startDate.split('-'));
   let end = new Date(endDate);
   startString = `${stringMonth(start)} ${start.getDate()}, ${start.getFullYear()}`;
+  console.log(start);
   return startString
 }
 
