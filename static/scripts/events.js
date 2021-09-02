@@ -28,16 +28,22 @@ function getDates(startDate, endDate) {
 function eventDisplay(pbEvent) {
   for (item of pbEvent) {
     container = document.getElementById("event-container");
-    var title = document.createElement("h4");
-    title.innerHTML = `${item.name}<small>${getDates(item.start_date, item.end_date)}</small>`;
-    title.setAttribute("style", "margin-bottom: 0em;")
+    var title = document.createElement("h2");
+    title.innerHTML = `${item.name}`;
     container.appendChild(title);
+    var date = document.createElement("h3");
+    date.innerHTML = `${getDates(item.start_date, item.end_date)}`;
+    container.appendChild(date);
     var para = document.createElement("p");
-    para.innerHTML = `<span class="icon-location"></span><b>${item.location}</b><br />
+    para.innerHTML = `
+      <b>${item.location}</b><br />
       ${item.address}<br />
       ${item.city}<br />
       <a href=${item.url}>Event Link</a>`;
     container.appendChild(para);
+    var space = document.createElement("div");
+    space.innerHTML = "&nbsp;";
+    container.appendChild(space);
   }
 }
 
