@@ -158,5 +158,15 @@
     "address": "3545 Douglas Rd",
     "city": "Millstadt IL, 62260",
     "url": "https://www.vantora.com/Paintball/XTRM/registration/default.asp?pid=6723#/"
+  },
+  {
+    "name": "Fall Woodsball 7 Man Brawl",
+    "start_date": "2021-12-05",
+    "end_date": "2021-12-05",
+    "event_type": "TRN",
+    "location": "Cousins Paintball",
+    "address": "750 Whiting New Egypt Rd (Rt 539)",
+    "city": "Manchester, NJ 08759",
+    "url": "https://adventures.redpodium.com/cousins-paintball-fall-7-man-woodsball"
   }
 ]
