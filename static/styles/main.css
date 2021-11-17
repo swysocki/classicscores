@@ -12,3 +12,6 @@ h2,
 h3 {
   line-height: 1.2
 }
+th, td {
+  padding-right: .8em;
+}
