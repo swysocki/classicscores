@@ -10910,5 +10910,127 @@
                 "team": "Cottonmouths"
             }
         ]
+    },
+    {
+        "name": "New York Cup",
+        "league": "INDY",
+        "location": "Plattekill, NY",
+        "year": "1996",
+        "results": [
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "1",
+                "team": "Image"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "2",
+                "team": "GBD"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "3",
+                "team": "All Americans"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "4",
+                "team": "Ironmen"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "1",
+                "team": "OBR"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "2",
+                "team": "X-Men"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "3",
+                "team": "All Americans 2"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "4",
+                "team": "X-Treme"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "1",
+                "team": "Lockout"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "2",
+                "team": "Personal Vendetta"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "3",
+                "team": "Fusion"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "4",
+                "team": "Nobodies"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "5",
+                "team": "Hounds of Hell"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "6",
+                "team": "Badgers"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "7",
+                "team": "Evolution X"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "8",
+                "team": "Blitzkrieg"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "9",
+                "team": "Dream Warriors"
+            },
+            {
+                "division": "PRO",
+                "format": "5M",
+                "place": "1",
+                "team": "All Americans"
+            },
+            {
+                "division": "PRO",
+                "format": "5M",
+                "place": "2",
+                "team": "Rage"
+            }
+        ]
     }
 ]
