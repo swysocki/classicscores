@@ -11032,5 +11032,97 @@
                 "team": "Rage"
             }
         ]
+    },
+    {
+        "league": "INDY",
+        "location": "Nashville, TN",
+        "name": "Music City Open",
+        "year": "1992",
+        "results": [
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "1",
+                "team": "All Americans"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "2",
+                "team": "Terminators"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "3",
+                "team": "Jacksonville Warriors"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "4",
+                "team": "Tour de Force"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "5",
+                "team": "Annihilators"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "6",
+                "team": "Bad Company"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "7",
+                "team": "Ironmen"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "8",
+                "team": "Bushwackers"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "9",
+                "team": "Swarm"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "10",
+                "team": "TCC Mercenaries"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "11",
+                "team": "Texas Bushwackers"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "12",
+                "team": "Farside"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "13",
+                "team": "CIA Widowmakers"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "14",
+                "team": "No Quarter"
+            }
+        ]
     }
 ]
