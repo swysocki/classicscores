@@ -11124,5 +11124,235 @@
                 "team": "No Quarter"
             }
         ]
+    },
+    {
+        "league": "INDY",
+        "location": "Nashville, TN",
+        "name": "International Masters",
+        "year": "1992",
+        "results": [
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "1",
+                "team": "Ironmen"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "2",
+                "team": "Florida Terminators"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "3",
+                "team": "Bad Company"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "4",
+                "team": "Farside"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "5",
+                "team": "Black Diamonds"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "6",
+                "team": "California Top Gun"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "7",
+                "team": "Tour de Force"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "8",
+                "team": "Florida Annihilators"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "9",
+                "team": "All Americans"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "10",
+                "team": "Arch Angels"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "11",
+                "team": "Rage (England)"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "12",
+                "team": "Black Reign"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "13",
+                "team": "Cobra"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "14",
+                "team": "Phantom Regiment"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "15",
+                "team": "Jessie's Raiders"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "16",
+                "team": "Maniac Predators"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "17",
+                "team": "Wolfpack"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "18",
+                "team": "High Drifters"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "19",
+                "team": "Head Hunters"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "20",
+                "team": "Line SI"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "21",
+                "team": "Ragged Edge"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "22",
+                "team": "Minnesota Terminators"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "23",
+                "team": "Body Count"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "24",
+                "team": "Timber Ratlers"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "25",
+                "team": "CIA"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "26",
+                "team": "Prism"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "27",
+                "team": "Taco Benders"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "28",
+                "team": "No Quarter"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "29",
+                "team": "Jesters"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "30",
+                "team": "Fair Warning"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "31",
+                "team": "Doom Troopers"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "32",
+                "team": "Diamond Dogs"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "33",
+                "team": "Final Assault"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "34",
+                "team": "Team St. Louis"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "35",
+                "team": "Mercenarios (Brazil)"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "36",
+                "team": "Posse"
+            },
+            {
+                "division": "OP",
+                "format": "5M",
+                "place": "37",
+                "team": "Bad Boys"
+            }
+        ]
     }
 ]
