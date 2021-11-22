@@ -11812,5 +11812,73 @@
                 "team": "Pro-Am"
             }
         ]
+    },
+    {
+        "year": "1992",
+        "location": "Northern CA",
+        "name": "Bay City Open",
+        "league": "INDY",
+        "results": [
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "1",
+                "team": "Ironmen"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "2",
+                "team": "Black Diamonds"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "3",
+                "team": "Tour De Force"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "4",
+                "team": "Sudden Death"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "5",
+                "team": "Florida Terminators"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "6",
+                "team": "Constant Pursuit"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "7",
+                "team": "GBD"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "8",
+                "team": "Western Oregon Rebels"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "9",
+                "team": "Top Guns"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "place": "10",
+                "team": "Posse"
+            }
+        ]
     }
 ]
