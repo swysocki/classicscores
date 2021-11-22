@@ -9952,7 +9952,7 @@
     {
         "year": "2019",
         "league": "INDY",
-        "location": "Pittsburg, PA",
+        "location": "Pittsburgh, PA",
         "name": "Iron City Classic",
         "results": [
             {
@@ -11352,6 +11352,464 @@
                 "format": "5M",
                 "place": "37",
                 "team": "Bad Boys"
+            }
+        ]
+    },
+    {
+        "league": "INDY",
+        "location": "Pittsburgh, PA",
+        "name": "National International Open",
+        "year": "1992",
+        "results": [
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "1",
+                "team": "Manica Predators"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "2",
+                "team": "Plague"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "3",
+                "team": "Phantom Force"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "4",
+                "team": "High Drifters"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "5",
+                "team": "No Quarter"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "6",
+                "team": "SOB's"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "7",
+                "team": "Timber Rattlers"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "8",
+                "team": "Allied Forces"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "9",
+                "team": "Guns of Paradise"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "10",
+                "team": "Venvom"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "11",
+                "team": "Avante Garde"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "12",
+                "team": "Blackhawk"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "13",
+                "team": "Green Dragons"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "14",
+                "team": "Final Assault"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "15",
+                "team": "Bad Boys of Maryland"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "16",
+                "team": "Michigan Highlanders"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "17",
+                "team": "Wild Bunch"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "18",
+                "team": "Outta Control One"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "19",
+                "team": "Apple Dumpling Gange"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "20",
+                "team": "Crossfire One"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "21",
+                "team": "Minnesota Blizzard"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "22",
+                "team": "Pennsylvania Highlanders One"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "23",
+                "team": "Full Tilt"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "24",
+                "team": "Landsharks"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "25",
+                "team": "Gunslingers One"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "26",
+                "team": "Rad Busters"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "27",
+                "team": "Hazardous Waste"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "28",
+                "team": "Long Island Caretakers"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "29",
+                "team": "Mirage"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "30",
+                "team": "Excalibur"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "31",
+                "team": "Ohio Black Reign"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "32",
+                "team": "Renegades"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "33",
+                "team": "Look Out"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "34",
+                "team": "Old Men"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "35",
+                "team": "Distinguished Johnsons"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "36",
+                "team": "Badlanders"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "37",
+                "team": "Screaming Eagles"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "38",
+                "team": "Team Havoc"
+            },
+            {
+                "division": "AM",
+                "format": "5M",
+                "place": "39",
+                "team": "Battle Dragons"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "1",
+                "team": "Plague"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "2",
+                "team": "Timber Rattlers"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "3",
+                "team": "Kalamazoo Colonial Marines"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "4",
+                "team": "Indiana Black Reign"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "5",
+                "team": "Phantom Force"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "6",
+                "team": "Fatal Company"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "7",
+                "team": "Guns of Paradise"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "8",
+                "team": "Distinguished Johnsons"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "9",
+                "team": "Avante Garde"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "10",
+                "team": "War Party"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "11",
+                "team": "Zone Troopers"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "12",
+                "team": "Green Machine"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "13",
+                "team": "Gary's Guerillas"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "14",
+                "team": "F-Troop"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "15",
+                "team": "I.C.E."
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "16",
+                "team": "Excalibur"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "17",
+                "team": "Violent by Nature"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "18",
+                "team": "Mirage"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "19",
+                "team": "Recon South"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "20",
+                "team": "Rad Busters"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "21",
+                "team": "Team Genocide"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "22",
+                "team": "Psyclones"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "23",
+                "team": "Outta Control"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "24",
+                "team": "SOBs"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "25",
+                "team": "Lightning Force"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "26",
+                "team": "Full Tilt"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "27",
+                "team": "Black Dogs"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "28",
+                "team": "Storm"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "29",
+                "team": "Ohio Black Reign"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "30",
+                "team": "Landsharks"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "31",
+                "team": "Blackout"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "32",
+                "team": "Mystic Fire 1"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "33",
+                "team": "Mystic Fire 2"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "34",
+                "team": "Raven Brotherhood"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "35",
+                "team": "Kleinburg Knights"
+            },
+            {
+                "division": "AM",
+                "format": "10M",
+                "place": "36",
+                "team": "Pro-Am"
             }
         ]
     }
