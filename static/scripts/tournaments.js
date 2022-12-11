@@ -48,10 +48,11 @@ var formatMap = {
 
 function displayStats() {
   let scoresCount = 0;
+  let thisYear = new Date().getFullYear();
   for (score of tournamentData) {
     scoresCount += score.results.length;
   }
-  footerText = `© 2021 ClassicScores | ${yearCount} Years | ${scoresCount} Scores`
+  footerText = `© 2018 - ${thisYear} ClassicScores | ${yearCount} Years | ${scoresCount} Scores`
   document.getElementById("stats").innerHTML = footerText;
 }
 
