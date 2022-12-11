@@ -99,6 +99,44 @@
     },
     {
         "year": "1992",
+        "league": "INDY",
+        "location": "London, England",
+        "name": "Mayhem Masters",
+        "results": [
+            {
+                "division": "PRO",
+                "format": "10M",
+                "team": "Turks",
+                "place": "1"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "team": "Bad Company",
+                "place": "2"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "team": "Shades of Grey",
+                "place": "3"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "team": "Asco Force",
+                "place": "4"
+            },
+            {
+                "division": "PRO",
+                "format": "10M",
+                "team": "MUFs",
+                "place": "5"
+            }
+        ]
+    },
+    {
+        "year": "1992",
         "league": "NPPL",
         "location": "Plattekill, NY",
         "name": "World Cup",
