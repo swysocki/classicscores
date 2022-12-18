@@ -1,5 +1,73 @@
 [
     {
+        "year": "1992",
+        "league": "INDY",
+        "location": "Dallas, TX",
+        "name": "Lone Star Open",
+        "results":[
+         {
+                "division": "OP",
+                "format": "10M",
+                "team": "Tour De Force",
+                "place": "1"
+            },   
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "Ironmen",
+                "place": "2"
+            },
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "All Americans",
+                "place": "3"
+            },
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "Constant Pursuit",
+                "place": "4"
+            },
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "Assassins",
+                "place": "5"
+            },
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "Black Diamonds",
+                "place": "6"
+            },
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "Bad Company",
+                "place": "7"
+            },
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "California Bushmasters",
+                "place": "8"
+            },
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "Aftershock",
+                "place": "9"
+            },
+            {
+                "division": "OP",
+                "format": "10M",
+                "team": "Florida Annihilators",
+                "place": "10"
+            }
+        ]
+    },
+    {
         "year": "2021",
         "league": "INDY",
         "location": "Seffner, FL",
