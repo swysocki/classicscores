@@ -69,9 +69,10 @@ select {
   padding: 8px 32px 8px 12px;
   border: 1px solid var(--field);
   border-radius: 0;
-  color: var(--ink);
+  color: #171a14;
   background: var(--paper);
   font: inherit;
+  font-weight: 600;
 }
 
 select:focus-visible {
