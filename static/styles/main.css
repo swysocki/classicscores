@@ -1,17 +1,173 @@
+:root {
+  color-scheme: light;
+  --paper: #f3f0df;
+  --ink: #282b22;
+  --field: #315b3b;
+  --line: #a9a58c;
+  --wash: #e8e3cc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 40px auto;
-  max-width: 650px;
-  line-height: 1.6;
-  font-size: 18px;
-  color: #444;
-  padding: 0 10px
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 24px;
+  color: var(--ink);
+  background: var(--paper);
+  font: 17px/1.55 "Courier New", Courier, monospace;
+}
+
+header {
+  padding: 16px 0 12px;
+  border-bottom: 4px double var(--field);
 }
 
 h1,
 h2,
 h3 {
-  line-height: 1.2
+  line-height: 1.2;
 }
-th, td {
-  padding-right: .8em;
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+h1 a {
+  color: var(--field);
+  text-decoration: none;
+}
+
+h1 a:hover,
+h1 a:focus-visible {
+  text-decoration: underline;
+}
+
+#year-container,
+#league-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 12px 8px 0;
+}
+
+#year-container h3,
+#league-container h3 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+select {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 8px 32px 8px 12px;
+  border: 1px solid var(--field);
+  border-radius: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font: inherit;
+}
+
+select:focus-visible {
+  outline: 3px solid var(--field);
+  outline-offset: 2px;
+}
+
+#result-container {
+  margin-top: 18px;
+}
+
+#result-container h2 {
+  margin: 28px 0 0;
+  padding: 10px 12px;
+  color: var(--paper);
+  background: var(--field);
+  font-size: 1.25rem;
+}
+
+#result-container h3 {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-top: 0;
+  background: var(--wash);
+  font-size: 1rem;
+}
+
+#result-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+#result-container th,
+#result-container td {
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+#result-container td {
+  color: #171a14;
+  font-weight: 600;
+}
+
+#result-container th {
+  color: var(--field);
+  text-transform: uppercase;
+}
+
+#result-container tr:nth-child(even) {
+  background: var(--wash);
+}
+
+footer {
+  margin-top: 32px;
+  padding: 12px 0;
+  border-top: 4px double var(--field);
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 16px auto;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  #year-container,
+  #league-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 0;
+  }
+
+  #year-container select,
+  #league-container select {
+    flex: 1;
+    width: 1px;
+  }
+
+  #result-container {
+    overflow-x: auto;
+  }
+
+  #result-container table {
+    min-width: 480px;
+  }
+
+  #result-container th,
+  #result-container td {
+    padding: 8px;
+  }
 }
